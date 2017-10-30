@@ -55,19 +55,20 @@ export class SideMenuCtrl {
    }
 
    if (this.contextSrv.hasRole('Admin')) {
-     this.orgMenu.push({section: this.user.orgName, cssClass: 'dropdown-menu-title'});
-     this.orgMenu.push({
-       text: "Preferences",
-       url: this.getUrl("/org")
-     });
-     this.orgMenu.push({
-       text: "Users",
-       url: this.getUrl("/org/users")
-     });
-     this.orgMenu.push({
-       text: "API Keys",
-       url: this.getUrl("/org/apikeys")
-     });
+//MMM-MIN 2017.10.24
+//     this.orgMenu.push({section: this.user.orgName, cssClass: 'dropdown-menu-title'});
+//     this.orgMenu.push({
+//       text: "Preferences",
+//       url: this.getUrl("/org")
+//     });
+//     this.orgMenu.push({
+//       text: "Users",
+//       url: this.getUrl("/org/users")
+//     });
+//     this.orgMenu.push({
+//       text: "API Keys",
+//       url: this.getUrl("/org/apikeys")
+//     });
    }
 
    this.orgMenu.push({cssClass: "divider"});
@@ -98,7 +99,8 @@ export class SideMenuCtrl {
      }
    });
    if (config.allowOrgCreate) {
-     this.orgItems.push({text: "New organization", icon: "fa fa-fw fa-plus", url: this.getUrl('/org/new')});
+//MMM-MIN 2017.10.24
+//     this.orgItems.push({text: "New organization", icon: "fa fa-fw fa-plus", url: this.getUrl('/org/new')});
    }
  }
 }
