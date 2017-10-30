@@ -1,8 +1,11 @@
 <div class="pluginlist">
   <div class="pluginlist-section" ng-repeat="category in ctrl.viewModel">
+<!-- MMM-MIN 2017.10.25 -->
+<!--
     <h6 class="pluginlist-section-header">
       {{category.header}}
     </h6>
+-->
     <div class="pluginlist-item" ng-repeat="plugin in category.list">
       <a class="pluginlist-link pluginlist-link-{{plugin.state}} pointer" href="{{plugin.defaultNavUrl}}">
         <span>
@@ -21,10 +24,16 @@
         </span>
       </a>
     </div>
+<!-- MIN-MMM 2017.10.24 -->
+<!--
     <div class="pluginlist-item" ng-show="category.list.length === 0">
       <a class="pluginlist-link pluginlist-link-{{plugin.state}}" href="https://grafana.com/plugins">
         <span class="pluginlist-none-installed">None installed. <span class="pluginlist-emphasis">Browse Grafana.com</span></span>
       </a>
     </div>
+-->
+<!-- MMM-MIN 2017.10.26 -->
+<!--
   </div>
+-->
 </div>

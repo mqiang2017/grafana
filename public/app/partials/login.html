@@ -3,8 +3,13 @@
 	<div class="login-box">
 
 		<div class="login-box-logo">
-			<img class="logo-icon" src="public/img/grafana_icon.svg"></img><br>
-			<i class="icon-gf icon-gf-grafana_wordmark"></i>
+<!-- MMM-MIN 2017.10.25 -->
+<!--
+			<img class="logo-icon" src="public/img/grafana_icon.png"></img><br>
+			<i class="icon-gf icon-gf-grafana_wordmark"></i> 
+-->
+                        <img class="logo-icon" src="public/img/robomq_icon.png"></img><br>
+
 		</div>
 
     <div class="login-inner-box">
@@ -60,8 +65,12 @@
 						GitHub
 					</a>
 					<a class="btn btn-large btn-grafana-com" href="login/grafana_com" target="_self" ng-if="oauth.grafana_com">
-						<img src="public/img/grafana_com_auth_icon.svg"></img>
-						<span>Grafana.com</span>
+					<!-- MMM-MIN 2017.10.25 -->
+					<!--
+						<img src="public/img/grafana_com_auth_icon.png"></img>
+					-->
+						<img src="public/img/robomq_com_auth_icon.png"></img>
+						<span>Robomq.io</span> <!-- MMM-MIN 2017.10.24 <span>Grafana.com</span> -->
 					</a>
 					<a class="btn btn-large btn-generic-oauth" href="login/generic_oauth" target="_self" ng-if="oauth.generic_oauth">
 						<i class="fa fa-gear"></i>
